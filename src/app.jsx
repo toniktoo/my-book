@@ -1,18 +1,23 @@
 import React from "react";
+import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
+import { CssBaseline, Box, Modal } from "@mui/material";
 
-import { CssBaseline, Box } from "@mui/material";
-
-import { Header } from "./widgets/header";
-import { Footer } from "./widgets/footer";
+import { Header } from "./layouts/header";
+import { Footer } from "./layouts/footer";
+import { ModalContainer } from "./features/modal";
 
 export const App = () => {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Box>
-        <Header />
-        <Footer />
-      </Box>
+
+      <BrowserRouter>
+        <Box>
+          <Header />
+          <Footer />
+          <ModalContainer />
+        </Box>
+      </BrowserRouter>
     </React.Fragment>
   );
 };

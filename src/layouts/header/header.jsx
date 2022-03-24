@@ -1,6 +1,8 @@
 import React from "react";
-import { Container, Box, Typography, Button } from "@mui/material";
+import { Container, Box, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
+
+import { Nav } from "widgets/nav";
 
 export const Header = () => {
   return (
@@ -9,9 +11,7 @@ export const Header = () => {
         <Typography variant="h1" fontSize="2rem">
           My book
         </Typography>
-        <StyledAbout>
-          <Button variant="outlined">sign-in</Button>
-        </StyledAbout>
+        <Nav />
       </StyledContainer>
     </StyledHeader>
   );
@@ -33,13 +33,6 @@ const StyledHeader = styled(Box)`
 
 const StyledContainer = styled(Container)`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
-
-const StyledAbout = styled(Box)`
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 `;

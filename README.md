@@ -12,3 +12,12 @@ ideas:
 - management app
 - events push and save
 - events call and check time -> notify mobile || apple watch || web
+
+docs:
+
+page - глобальная разметка страница
+layouts - глобальные слои на page
+container - ?
+widget - не может исользовать другие виджеты, но может использовать фичи
+feature - атомарная переиспользуемая сущность
+components - глупые компоненты, без БЛ
