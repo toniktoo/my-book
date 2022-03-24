@@ -2,16 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 
-import { CssBaseline, Box } from "@mui/material";
-
-import { Header } from "./layouts/header";
+import { App } from "./app";
 
 ReactDOM.render(
   <React.StrictMode>
-    <CssBaseline />
-    <Box>
-      <Header />
-    </Box>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );
